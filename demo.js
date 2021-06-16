@@ -18,8 +18,10 @@ function twoSumWithHash(arr, target) {
 
 const twoSumWithSort = (arr, target) => {
   if (!arr || arr.length === 0) return [];
+
   // sort the array
   arr.sort((a, b) => a - b);
+
   for (let i = 0, j = arr.length - 1; i <= j ; ) {
     const sum = arr[i] + arr[j];
     if (sum === target) {
